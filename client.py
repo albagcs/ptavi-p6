@@ -34,7 +34,7 @@ my_socket.send(envio)
 try:
     data = my_socket.recv(1024)
     print 'Recibido -- ', data
-    if data == ("SIP/2.0 100 Trying\r\n\r\nSIP/2.0 180 Ring"
+    if data == ("SIP/2.0 100 Trying\r\n\r\nSIP/2.0 180 Ringing"
                 "\r\n\r\nSIP/2.0 200 OK\r\n\r\n"):
         metodo = "ACK"
         envio = metodo + line
